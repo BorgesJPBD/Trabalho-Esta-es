@@ -64,6 +64,12 @@ function calcula_estacao() {
 
   document.getElementById("nome_estacao").textContent = nome;
 
+
+  if (num_mes < 1 || num_mes > 12 || isNaN(num_mes)) {
+  alert("Por favor, digite um número de mês entre 1 e 12.");
+  return;
+}
+
   // ESCONDE TODAS AS IMAGENS
   const estacoes = document.getElementsByClassName("estacao");
   for (let i = 0; i < estacoes.length; i++) {
