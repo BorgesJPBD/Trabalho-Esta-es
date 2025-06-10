@@ -70,13 +70,13 @@ function calcula_estacao() {
   return;
 }
 
-  // ESCONDE TODAS AS IMAGENS
+ 
   const estacoes = document.getElementsByClassName("estacao");
   for (let i = 0; i < estacoes.length; i++) {
     estacoes[i].style.display = "none";
   }
 
-  // MOSTRA SOMENTE A IMAGEM DA ESTAÇÃO ESCOLHIDA
+  
   document.querySelector("." + nome).style.display = "block";
 
   coresEstacao();
